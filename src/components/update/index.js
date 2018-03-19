@@ -41,7 +41,7 @@ class Update extends Component {
   }
 
   async checkLogin() {
-    token = null//STORAGE.getValue('token')
+    token = STORAGE.getValue('token')
     if (token !== null) {
       this.checkTokenExp(token)
     }
